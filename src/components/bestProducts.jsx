@@ -5,21 +5,25 @@ const BestProducts = () => {
       category: "Sunscreen",
       price: "$55.00",
       color: "from-pink-100 to-purple-100",
+      img:"https://images.unsplash.com/photo-1594527964562-32ed6eb11709?q=80&w=997&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       category: "Anti-Aging",
       price: "$75.00",
       color: "from-purple-100 to-pink-100",
+      img:"https://images.unsplash.com/photo-1708477199100-e4d5f56a8eb2?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       category: "Cleansers",
       price: "$10.00",
       color: "from-pink-100 to-rose-100",
+      img:"https://images.unsplash.com/photo-1649073005971-37babef31983?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xlYW5zZXJzfGVufDB8fDB8fHww"
     },
     {
       category: "Moisturizers",
       price: "$15.00",
       color: "from-rose-100 to-purple-100",
+      img:"https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9pc3R1cmlzZXJ8ZW58MHx8MHx8fDA%3D"
     },
   ];
 
@@ -46,30 +50,27 @@ const BestProducts = () => {
           {products.map((product, index) => (
             <div
               key={index}
-              className={`relative bg-white p-6 rounded-t-full rounded-s-4xl rounded-b-4xl shadow-4xl hover:shadow-2xl transition-all duration-300 overflow-hidden `}
+              className={`relative  p-8 rounded-t-full rounded-s-4xl rounded-b-4xl shadow-4xl hover:shadow-2xl transition-all duration-300 overflow-hidden `}
               style={{
     marginTop: `${(3-index) * 40}px`,
   }}
             >
 
-              <div className="grid grid-cols-2 gap-3 mb-6">
-                {Array.from({ length: 4 }).map((_, i) => (
+              <div className="grid grid-cols-1 h-72 bg-white rounded-t-full gap-3 mb-6">
                   <div
-                    key={i}
-                    className="aspect-square bg-gray-100 rounded-2xl overflow-hidden border border-white"
+                     className="  rounded-2xl overflow-hidden  p-2 "
                   >
                     <img
-                      src={`https://picsum.photos/id/${180 + index * 10 + i}/300/300`}
+                      src={`${product.img}`}
                       alt="product"
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full  rounded-t-full object-cover hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                ))}
               </div>
 
-              <div className="text-center">
-                <p className="text-xl font-medium text-gray-800">{product.category}</p>
-                <p className="text-3xl font-bold text-purple-600 mt-1">
+              <div className="text-center flex justify-between gap-4">
+                <p className="text-2xl font-medium text-gray-800">{product.category}</p>
+                <p className="text-2xl font-semibold text-purple-600 mt-1">
                   {product.price}
                 </p>
               </div>

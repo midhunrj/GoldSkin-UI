@@ -24,8 +24,8 @@ const Footer = () => {
   ]
   return (
     <>
-    <div className='bg-black p-8'>
-      <div className='grid grid-cols-4 py-6 px-2 gap-4'>
+    <div className='bg-black  p-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-center md:text-left  py-6 px-2 gap-4'>
         {Sections.map((data,index)=>(
         <div key={index}>
             <h3 className='text-lg font-semibold text-white italic mb-4'>
@@ -50,7 +50,7 @@ const Footer = () => {
             <button className="bg-pink-400 px-8 text-sm font-medium">Send</button>
           </div>
 
-          <div className="flex gap-4 px-6 sm:px-4 mt-8">
+          <div className="flex gap-4 px-4 sm:px-6 mt-8">
             {icons.map((icon, i) => (
               <div key={i} className="w-9 h-9 text-gray-200 hover:  rounded-full flex items-center justify-center text-xl cursor-pointer hover:text-white transition-colors">
                 {icon }

@@ -7,7 +7,7 @@ import Footer from './components/footer'
 import ServiceCare from './components/serviceCare'
 import Testimonials from './components/testimonials'
 import Subscribeletter from './components/subscribeletter'
-import BestProducts from './bestProducts'
+import BestProducts from './components/bestProducts'
 import BeautySection from './components/beautySection'
 
 function App() {

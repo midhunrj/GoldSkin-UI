@@ -35,7 +35,7 @@ const Testimonials = () => {
               key={i}
               className={`${review.color} ${review.textcolor} p-8 rounded-3xl shadow-xl`}
             >
-              <div className="text-6xl text-gray-300 mb-6"><img src="testi-img.png" alt="testimonial-DP" className="rounded-full w-12 h-12 "/></div>
+              <div className="text-6xl text-gray-300 mb-6"><img src="empty-dp.jpeg" alt="testimonial-DP" className="rounded-full w-12 h-12 "/></div>
               <p className={`${review.color=="bg-white"?"text-gray-700":"text-white"} leading-relaxed mb-8`}>{review.text}</p>
               <div className="flex items-center justify-between">
                 <p className="font-semibold">{review.name}</p>
