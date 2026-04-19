@@ -1,4 +1,4 @@
-// components/Testimonials.jsx
+
 const Testimonials = () => {
   const reviews = [
     {

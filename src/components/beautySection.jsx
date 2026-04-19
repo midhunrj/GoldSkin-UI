@@ -1,4 +1,4 @@
-// components/BeautySection.jsx
+
 const BeautySection = () => {
   return (
     <section className="py-24 bg-gradient-to-br from-[#fdf7f4] via-[#fff0f5] to-[#f8e8f0] relative overflow-hidden">

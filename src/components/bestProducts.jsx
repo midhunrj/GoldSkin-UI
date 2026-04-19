@@ -1,4 +1,4 @@
-// components/BestProducts.jsx
+
 const BestProducts = () => {
   const products = [
     {
